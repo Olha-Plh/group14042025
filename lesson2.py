@@ -1,3 +1,5 @@
+import les2_constants
+
 # print(id("jenjnnn"))
 
 
@@ -17,12 +19,30 @@ formatted_string = f"{char_97=}"
 formatted_string = f"{char_97=} but {pos_number_of_a}"
 print(formatted_string)
 
-pass
+
 
 
 name = "Kate"
 service = "Dentist"
-address = "Beautiful, 17"
 # sms = name + service + address
 # sms = "Dear" + name + ", we're waiting for you on " + service + "our address:" + address )
-sms = f"Dear {name}, we are waiting for you on {service}. Our address: {address}"
+sms1 = f"Dear {name}, we are waiting for you on '{service}'. Our address: {les2_constants.address}"
+
+
+print(sms1)
+
+
+MSG_ENTER_NAME = 'Your name:'
+name = input(MSG_ENTER_NAME)
+
+
+
+SMS_TEMPLATE = ("Dear {name}, we are waiting for you on {service}. Our address: {address}")
+sms2 = SMS_TEMPLATE.format(name=name, service='Manicure', address=les2_constants.address)
+print(f"{sms2=}")
+
+
+
+
+
+pass
