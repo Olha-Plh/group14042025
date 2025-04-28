@@ -20,8 +20,10 @@ num3 = num1 + num2
 num4 = num1 - num3
 negative_number1 = -1
 negative_number2 = -156.124
-rounded_negative_number2 = round(negative_number2, 2)
-rounded_negative_number2_int = round(negative_number2, -2)
+rounded_negative_number2 = round(negative_number2, 2)  # rounding to 10 decimal places
+rounded_negative_number2_int = round(
+    negative_number2, -2
+)  # rounding to 2 decimal places in the opposite direction
 negative_bad_number = -156.0
 
 power = 5**2
