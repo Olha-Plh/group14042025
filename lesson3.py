@@ -29,9 +29,9 @@ slices2 = some_string[0:12]
 slices3 = some_string[12:20]
 slices4 = some_string[::2]
 slices5 = some_string[1:25:2]
-slices6 = some_string[::-1]
-slices7 = some_string[::-2]
-slices8 = some_string[-3:-20:-2]
+slices6 = some_string[::-1]  # reverse
+slices7 = some_string[::-2]  # reverse
+slices8 = some_string[-3:-20:-2]  # reverse
 
 
 pass
