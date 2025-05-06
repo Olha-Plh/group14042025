@@ -80,4 +80,14 @@ if is_person_child or is_person_renter:
 discount_summ = ticket_cost * ride_discount / 100
 total = ticket_cost - (discount_summ)
 print(total)
+
+str1 = "hh"
+str2 = "jhjhj"
+
+if str1 == str2:
+    print(323232232)
+
+if str1 != str2:
+    print(55555555555)
+
 pass
