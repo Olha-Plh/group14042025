@@ -80,4 +80,5 @@ if is_person_child or is_person_renter:
 discount_summ = ticket_cost * ride_discount / 100
 total = ticket_cost - (discount_summ)
 print(total)
+
 pass
