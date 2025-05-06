@@ -38,9 +38,11 @@ purchase_plan.sort(key=len, reverse=True)  # число 2 перемістили
 purchase_plan.remove("salt")
 
 # delete by index
+last_elem = purchase_plan.pop()
 purchase_plan.pop()  # відобразили останній доданий елемент
 purchase_plan.pop(0)  # відобразили перший доданий елемент
 
+purchase_plan.insert(1, 55555555)
 
 if "cake" in purchase_plan:
     purchase_plan.remove("cake")
