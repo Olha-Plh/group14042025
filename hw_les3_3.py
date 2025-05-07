@@ -1,12 +1,15 @@
 # my_list = [1, 2, 3, 4, 5, 6]
 # my_list = [1, 2, 3]
-my_list = [1, 2, 3, 4, 5]
+some_list = [1, 2, 3, 4, 5]
 # my_list = [1]
 # my_list = []
-if my_list:
-    last_elem1 = my_list.pop()
-    my_list.insert(0, last_elem1)
+some_string = some_list
+list_from_string = list(some_string)
 
-print(my_list)
+elements_in_some_string = len(some_string)
+elements_in_some_list = len(list_from_string)
+
+slice_data = list_from_string[0:]
+
 
 pass
