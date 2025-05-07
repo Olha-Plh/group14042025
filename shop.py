@@ -14,8 +14,8 @@ logging.basicConfig(
 )
 
 # PRICES
-CHEESE_PRICE = decimal.Decimal(286.3)
-POTATO_PRICE = decimal.Decimal(40)
+CHEESE_PRICE = decimal.Decimal(str(286.3))
+POTATO_PRICE = decimal.Decimal(str(40))
 
 # HEADER
 put_html("<h1>Welcome to our shop</h1>")
