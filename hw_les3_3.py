@@ -26,4 +26,5 @@ else:  # якщо не чотна кількість
     half = len(some_list) // 2 + 1
     result = [some_list[:half], some_list[half:]]
 
+
 pass
