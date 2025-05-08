@@ -1,5 +1,14 @@
 # my_list = [1, 2, 3, 4, 5, 6]
+# # my_list = [1, 2, 3]
+# # my_list = [1, 2, 3, 4, 5]
+# # my_list = [1]
+# # my_list = []
+# for batch in batched("123456", 6):
+#     print(batch)
+
+# my_list = [1, 2, 3, 4, 5, 6]
 # my_list = [1, 2, 3]
+
 some_list = [1, 2, 3, 4, 5]
 # my_list = [1]
 # my_list = []
