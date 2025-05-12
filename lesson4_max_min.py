@@ -17,7 +17,7 @@ minimum = min(some_list)
 summa = sum(some_list)
 summa1 = sum(some_list, start=10)  # start - мінімальньна сума
 
-some_str_list = ["ddhbshdddddwh", "dunxiki", "kokl"]
+some_str_list = ["ddhbshdddddwh", "dunxiki", "kokl", []]
 max_str = max(some_str_list, key=len)  # key -функція для визначення довжини
 min_str = min(some_str_list, key=len)
 pass
