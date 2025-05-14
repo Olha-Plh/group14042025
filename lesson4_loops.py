@@ -43,6 +43,8 @@ all_married_people = []
 not_married_from_city = []
 city = "Kyiv"
 
+total_age = 0
+people_married = 0
 ########
 for person in people:
     # person: ['Alex', 'Bush', 'Odesa', 35, True, 12131]
@@ -50,13 +52,25 @@ for person in people:
 
     # is_married = person[4]
     # address = person[2].lower()
-    # address = address.lower()
+    # address = address.lower() #якщо б декілька раз використовували місто, то швидше було б привести до нижнього регістру і шукати
     if is_married:
         # print(person)
         all_married_people.append(person)
     if not is_married and city.lower() in address.lower():
         not_married_from_city.append(person)
 
+if all_married_people:
+    ages = []  # 1 варіант
+    for married_person in all_married_people:
+        age = married_person[3]
+        total_age += age
+
+        ages.append(age)  # 1 варіант
+
+    print(f"Average age of married = {total_age/len(all_married_people)}")
+    print(f"Average age of married = {sum(ages)/len(all_married_people)}")  # 1 варіант
+else:
+    print("No married - no age")
 print("all married")
 pprint(all_married_people)
 print(f"not married from {city}")
