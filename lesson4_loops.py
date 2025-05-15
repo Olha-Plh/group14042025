@@ -46,7 +46,7 @@ city = "Kyiv"
 total_age = 0
 people_married = 0
 ########
-for person in people:
+for index, person in enumerate(people):
     # person: ['Alex', 'Bush', 'Odesa', 35, True, 12131]
     name, surname, address, age, is_married, inn = person
 
