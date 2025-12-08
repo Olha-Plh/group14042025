@@ -1,3 +1,5 @@
+from random import random, randint
+
 some_string = "I live in Odessa since 2004"
 other_result = some_string.split("i")
 other_result_visual = ["I", "live", "in", "Odessa", "since", "2004"]
@@ -91,8 +93,31 @@ print(random.choice(choices))
 
 
 # example_range(for the task 4.3)
-for elem in range(10):
+for elem in range(
+    10
+):  # відображає послідовність цілих чисел від 0 до числа, яке вказали (тобто 10)
     print(elem)
+
+for elem in range(
+    5, 10, 2
+):  # відобразити з 5 до 10 (без 10) кожне друге число (тобто 5,7,9)
+    print(elem)
+
+# game загадування і відгадування чисел
+MIN = 0
+MAX = 100
+rand_int = randint(MIN, MAX + 1)  # від мін до макс і потрапляло у вибірку +1
+
+MSG_ENTER_DATA = f"Enter your number from {MIN} to {MAX}"
+MSG_USER_INPUT = "You have entered {number}"
+MSG_USER_WON = "Correct"
+MSG_USER_MISSED = "Missed"
+MSG_WRONG_INPUT = "Only numbers "
+
+
+while True:
+    user_data = input(MSG_ENTER_DATA)
+    break
 
 
 pass
