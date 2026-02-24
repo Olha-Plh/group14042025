@@ -118,5 +118,19 @@ lst2 = my_string5.split(
 print(lst1)
 print(lst2)
 
+my_lst = ["I", "like", "Python"]
+_string = " ".join(my_lst)  # пробіл, як символ для з'єднання елементів зі списку
+print(_string)  # виведе: I like Python
+
+my_str = "I like Python"  # після кожного символу буде сепарувати (розділяти)
+_string = "_".join(my_str)
+print(_string)  # виведе: I_ _l_i_k_e_ _P_y_t_h_o_n
+
+string1 = "-".join("t")
+print(string1)  # виведе: t, оскільки 1 елемент, стрінга не працює, не буде додавати "-"
+
+string2 = "-".join("tt")
+print(string2)  # виведе: t-t, оскільки 2 елементи і стрінга спрацювала
+
 
 pass
